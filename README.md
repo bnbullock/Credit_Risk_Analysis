@@ -32,11 +32,11 @@ The credit card dataset is from the LendingClub, a peer-to-peer lending services
 The results of each sampling method is summarized below, analysis of the following scores are discussed:
 
 - Balance accuracy scores
-  - analysis
+  - This value is the measure of all correctly identified cases. As such, the model that provided the highest accuracy was the Easy Ensemble Classifier with a score of 93%
 - Precision scores
-  - analysis
+  - Precision is the ability of a classifier not to label an instance positive that is actually negative. Likewise, this provides an accuracy measure of positive prediction. All models provided a high level of precision at 99%.
 - Recall scores
-  - analysis
+  - This identifies what percentage of positive cases were caught by the model. The two models showing a high recall score is the Easy Ensemble and the Balanced Random Forest classifiers at 94% and 87% respectively.
 
 ### Naive Random Oversampling
 
