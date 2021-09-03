@@ -21,7 +21,7 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 ## Resources
 
-- Software: Visual Studio Code 1.56.2, Python 3.7.10, Jupyter Notebook 
+- Software: Visual Studio Code 1.56.2, Python 3.7.10, Jupyter Notebook v
 - Browser : Google Chrome v91.0.4472.124
 - Libraries: imbalanced-learn v0.8.0, scikit-learn v0.24.2
 
@@ -29,38 +29,46 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 ## Results
 
-- There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models
+The results of each sampling method is summarized below, analysis of the following scores are discussed:
+
+- Balance accuracy scores
+  - analysis
+- Precision scores
+  - analysis
+- Recall scores
+  - analysis
 
 ### Naive Random Oversampling
 
-![Image1](images/1CreateTables_1.png)
-
+![Image1](images/1NaiveRandomOver1.png)
 
 ### SMOTE Oversampling
 
-![Image2](images/2LoadedTables1.png)
-
+![Image2](images/2SmoteOver1.png)
 
 ### Combination Over and Under Sampling
 
-![Image3](images/3CountTableRows1.png)
+![Image3](images/3ClusterCentroidsUnder1.png)
 
 ### Combination SMOTEENN
 
+![Image4](images/4SmoteennOverUnder1.png)
 
 ### Resampling using Balanced Random Forest Classification
 
+![Image5](images/5BalForest1.png)
 
 ### Resampling using Easy Ensemble Classification
 
-
+![Image6](images/6Ensemble1.png)
 
 ------------------------------------------------------------------------------------------------------------
 
 ## Overall Summary
+
 - There is a summary of the results
 
-- There is a recommendation on which model to use, or there is no recommendation with a 
+- There is a recommendation on which model to use, or there is no recommendation with a
 justification
 
 - Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
