@@ -4,11 +4,9 @@
 
 Credit risk is a challenging situation that most individuals or corporate borrowers will encounter when providing or seeking funds for a specific credit basis, such as  a loan. A credit risk is the possibility that a borrower will fail to repay that loan or make the required payments agreed to in a contractual agreement. A lender having taken the risk to provide a loan does not receive the owed principal and interest thus resulting in cash flow disruption or related costs.
 
-In this project we will be using a data set and taking on the credit risk challenge specifically as it relates to creating a viable model that can idetify fraudulent transactions. We will be preparing the data, using statistical reasoning and employing machine learning in an attempt to solve this important challenge.
+In this project we will be using a dataset from the LendingClub, a peer-to-peer lending services company, and taking on the credit risk challenge specifically as it relates to creating a viable model that can idetify fraudulent transactions. We will be preparing the data, using statistical reasoning and employing machine learning in an attempt to solve this important challenge.
 
-We have identified credit card risk as an unbalanced classification problem, many loans will be provided and serviced properly, however, a small number of loans will be considered risky. Because of this, we will use different techniques to deploy machine learning to train and then evaluate these models with unbalanced classes. To handle the computational analysis we will be using the imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling.
-
-The credit card dataset is from the LendingClub, a peer-to-peer lending services company. We will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once this has been completed we will make a recommendation as to whether they should be used to predict credit risk.
+We have identified credit risk as an unbalanced classification problem, many loans will be provided and serviced properly, however, a small number of loans will be considered risky. Because of this, we will use different techniques to deploy machine learning to train and then evaluate these models with unbalanced classes. To handle the computational analysis we will be using the imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling. We will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once this has been completed we will make a recommendation as to whether they should be used to predict credit risk.
 
 - Deliverables:
 
@@ -36,7 +34,7 @@ The results of each sampling method is summarized below, analysis of the followi
 - Precision scores
   - Precision is the ability of a classifier not to label an instance positive that is actually negative. Likewise, this provides an accuracy measure of positive prediction. All models provided a high level of precision at 99%.
 - Recall scores
-  - This identifies what percentage of positive cases were caught by the model. The two models showing a high recall score is the Easy Ensemble and the Balanced Random Forest classifiers at 94% and 87% respectively.
+  - This identifies what percentage of positive cases were caught by each model. The two models showing a high recall score is the Easy Ensemble and the Balanced Random Forest classifiers at 94% and 87% respectively.
 
 ### Naive Random Oversampling
 
@@ -66,9 +64,10 @@ The results of each sampling method is summarized below, analysis of the followi
 
 ## Overall Summary
 
-- There is a summary of the results
+Having identified credit risk as an unbalanced classification problem with good loans in the majority and only a small amount of risky loans in our dataset, we undertook the challenge of evaluating 6 different models.
 
-- There is a recommendation on which model to use, or there is no recommendation with a
-justification
+As shown above, we have summarized the data metrics and provided a comparative overview of the accuracy, precision and sensitivity  for the models. The first 4 models are all generally the same with comparable accuracy values where true positives and true negatives give us this measure. The last 2 models give us an even higher accuracy score providing us with better predictive models. 
 
-- Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+But the focus of this project is credit risk so the analysis needs to look at the F1 scores that focus on false negatives and false positives. Especially since we are dealing with an imbalanced class distribution thus identifying the F1-score as the preferred metric to use to evaluate our model with.
+
+The Easy Ensemble Classifier would then be the recommended model as it provides an F1 score of 97% along with an accuracy measure of 93%.
